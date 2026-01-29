@@ -41,7 +41,7 @@ https://github.com/tesseract-ocr/tesseract
 🎥 How It Works (Step-by-Step)
 
 1. Captures Live Video
-    The webcam continuously captures frames using OpenCV.
+    - The webcam continuously captures frames using OpenCV.
 2. Preprocessing the Image
     - Converts frame to grayscale
     - Applies thresholding
