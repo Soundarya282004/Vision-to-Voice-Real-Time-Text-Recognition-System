@@ -40,42 +40,24 @@ https://github.com/tesseract-ocr/tesseract
 
 🎥 How It Works (Step-by-Step)
 
-Captures Live Video
-The webcam continuously captures frames using OpenCV.
-
-Preprocessing the Image
-
-Converts frame to grayscale
-
-Applies thresholding
-
-Uses dilation to highlight text regions
-
-Text Detection
-
-Finds contours (possible text areas)
-
-Draws green rectangles around detected regions
-
-OCR (Text Recognition)
-
-Each detected region is passed to Tesseract OCR
-
-Extracted text is stored
-
-Text-to-Speech Conversion
-
-Recognized text is converted into speech using Google Text-to-Speech (gTTS)
-
-Audio is saved as voice.mp3
-
-Audio Playback
-
-The MP3 file is played using pygame
-
-The program waits until audio finishes before continuing
-
-Exit
-
-Press Q to close the camera and stop the program
+1. Captures Live Video
+    The webcam continuously captures frames using OpenCV.
+2. Preprocessing the Image
+    - Converts frame to grayscale
+    - Applies thresholding
+    - Uses dilation to highlight text regions
+3. Text Detection
+    - Finds contours (possible text areas)
+    - Draws green rectangles around detected regions
+4. OCR (Text Recognition)
+    - Each detected region is passed to Tesseract OCR
+    - Extracted text is stored
+5. Text-to-Speech Conversion
+    - Recognized text is converted into speech using Google Text-to-Speech (gTTS)
+    - Audio is saved as voice.mp3
+6. Audio Playback
+    - The MP3 file is played using pygame
+    - The program waits until audio finishes before continuing
+7. Exit
+    - Press Q to close the camera and stop the program
 
