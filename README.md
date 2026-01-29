@@ -1,17 +1,13 @@
 # Vision-to-Voice-Real-Time-Text-Recognition-System
 it uses a webcam to detect text in real time, converts the detected text into digital text using OCR (Tesseract), and then reads it aloud using text-to-speech.
 
-🧠 What This Project Does (Short Description for GitHub)
-
-This project uses a webcam to detect text in real time, converts the detected text into digital text using OCR (Tesseract), and then reads it aloud using text-to-speech.
-
 It combines Computer Vision + OCR + Speech Synthesis to help users hear printed text.
 
-⚙️ Requirements
+⚙️ Requirements:
 
 Install these Python libraries before running:
 
-pip install opencv-python pytesseract pygame gTTS mutagen
+    pip install opencv-python pytesseract pygame gTTS mutagen
 
 🔹 Install Tesseract OCR Engine (Important!)
 
@@ -19,36 +15,30 @@ This project will NOT work without Tesseract installed on your system.
 
 ▶ Windows
 
-Download from:
+1. Download from:
 https://github.com/tesseract-ocr/tesseract
+2. Install it
+3. Add this line in your code before using pytesseract:
 
-Install it
-
-Add this line in your code before using pytesseract:
-
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-
+       pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 ▶ Linux (Ubuntu)
-sudo apt install tesseract-ocr
+          
+    sudo apt install tesseract-ocr
 
 ▶ Mac
-brew install tesseract
+  
+    brew install tesseract
 
 ▶ How to Run the Project
 
-Save your file as main.py
+1. Save your file as main.py
+2. Make sure your webcam is connected
+3. Open terminal in the project folder
+4. Run:
 
-Make sure your webcam is connected
-
-Open terminal in the project folder
-
-Run:
-
-python main.py
+       python main.py
 
 🎥 How It Works (Step-by-Step)
-
-You can put this in GitHub under “Working” section.
 
 Captures Live Video
 The webcam continuously captures frames using OpenCV.
@@ -87,8 +77,5 @@ The program waits until audio finishes before continuing
 
 Exit
 
-Note: Press Q to close the camera and stop the program
+Press Q to close the camera and stop the program
 
-⌨️ Controls
-Key	Action
-Q	Quit the application
